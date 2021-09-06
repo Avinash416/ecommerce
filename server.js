@@ -31,7 +31,7 @@ const URL=`mongodb+srv://${username}:${password}@ecommerceweb.xcihq.mongodb.net/
 
 Connection(process.env.MONGODB_URI || URL);
 
-if(process.env.NODE_ENV =='production'){
+if(process.env.NODE_ENV ==='production'){
     app.use(express.static('client/build'))
 }
 
