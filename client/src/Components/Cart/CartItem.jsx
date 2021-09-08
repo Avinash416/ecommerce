@@ -3,7 +3,7 @@ import { Card, makeStyles, Box, Typography, Button } from '@material-ui/core';
 import clsx from 'clsx';
 import GroupButton from './GroupButton';
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(theme=>({
     component: {
         borderTop: '1px solid #f0f0f0',
         borderRadius: 0,
@@ -19,7 +19,10 @@ const useStyle = makeStyles({
         width: 110
     },
     mid: {
-        margin: 20
+        margin: 20,
+        [theme.breakpoints.down('md')]:{
+            marginLeft:10
+        }
     },
     greyTextColor: {
         color: '#878787'
@@ -35,7 +38,7 @@ const useStyle = makeStyles({
         marginTop: 20,
         fontSize: 16
     }
-});
+}));
 
 const CartItem = ({ item, removeItemFromCart }) => {
     console.log(item)

@@ -14,7 +14,7 @@ const useStyle = makeStyles(theme => ({
         justifyContent: 'space-between'
     },
     image: {
-        width: '33%'
+        width: '100%'
     },
     help: {
       

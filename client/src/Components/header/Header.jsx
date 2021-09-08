@@ -70,7 +70,7 @@ const Header = () => {
     }
 
     const list = () => (
-        <Box className={classes.list} onClick={handleClose}>
+        <Box className={classes.list} onClick={handleOpen}>
             <List>
                 <ListItem button>
                     <CustomButtons />

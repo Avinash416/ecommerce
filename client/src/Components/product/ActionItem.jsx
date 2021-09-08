@@ -49,9 +49,9 @@ const ActionItem = ({ product }) => {
     const dispatch = useDispatch();
 
     const buyNow = async () => {
-        let response = await payUsingPaytm({ amount: 500, email: 'codeforinterview01@gmail.com'});
+        let response = await payUsingPaytm({ amount: 500, email: 'avijadhav416@gmail.com'});
         var information = {
-            action: 'https://securegw-stage.paytm.in/order/process',
+            action: '/order/process',
             params: response    
         }
         post(information);

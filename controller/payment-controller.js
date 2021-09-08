@@ -39,8 +39,8 @@ export const paymentResponse = (request, response) => {
 
                 var options = {
 
-                    hostname: 'securegw-stage.paytm.in',
-                    port: 443,
+                     hostname: '',
+                    //  port: 443,
                     path: '/order/status',
                     method: 'POST',
                     headers: {
@@ -57,7 +57,7 @@ export const paymentResponse = (request, response) => {
 
                     post_res.on('end', function () {
                         let result = JSON.parse(res)
-                        response.redirect(`http://localhost:3000/`)
+                        response.redirect(`/`)
                     });
                 });
                 post_req.write(post_data);
